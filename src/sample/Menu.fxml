@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+
+        <AnchorPane fx:controller="sample.Controller" xmlns="http://javafx.com/javafx"
+                    xmlns:fx="http://javafx.com/fxml"
+                    prefHeight="400.0" prefWidth="600.0" fx:id="anchorPane">
+            <children>
+                <Label layoutX="237.0" layoutY="2.0" prefHeight="24.0" prefWidth="72.0" text="Welcome " />
+                <Button fx:id="btnUse" layoutX="146.0" layoutY="38.0" mnemonicParsing="false" onAction="#useOnClick" text="Use"/>
+                <Button fx:id="btnAddProduct" layoutX="237.0" layoutY="38.0" mnemonicParsing="false" onAction="#productOnClick" text="Product" />
+                <Button fx:id="btnReport" layoutX="329.0" layoutY="38.0" mnemonicParsing="false" onAction="#reportOnClick" text="Report"  />
+            </children>
+        </AnchorPane>
+

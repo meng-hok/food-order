@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="751.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ReportController">
+   <children>
+      <DatePicker fx:id="rlDatePicker" layoutX="382.0" layoutY="2.0" />
+      <Button fx:id="btnrlSearch" layoutX="592.0" layoutY="2.0" mnemonicParsing="false" onAction="#rlSearchOnClick" text="Search" />
+      <Button fx:id="btnrlAll" layoutY="2.0" mnemonicParsing="false" onAction="#rlAllOnClick" prefHeight="25.0" prefWidth="143.0" text="All" />
+      <TableView fx:id="tblrlView" layoutX="49.0" layoutY="75.0" prefHeight="313.0" prefWidth="525.0">
+        <columns>
+          <!--<TableColumn prefWidth="75.0" text="C1" />-->
+          <!--<TableColumn prefWidth="75.0" text="C2" />-->
+        </columns>
+      </TableView>
+      <TableView fx:id="subTblrlView" layoutX="49.0" layoutY="452.0" prefHeight="187.0" prefWidth="525.0" />
+      <Text layoutX="256.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Main Receipts" wrappingWidth="143.0" />
+      <Text layoutX="16.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clicking on Main Receipt Row , Available Details of the receipt will be shown in next Table " wrappingWidth="592.0" />
+      <Text fx:id="txtrlUser" layoutX="149.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Label layoutX="49.0" layoutY="392.0" text="Operated by :" />
+      <Text layoutX="78.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please Click on Receipt Detail row to display product details." wrappingWidth="608.0" />
+      <Label layoutX="238.0" layoutY="410.0" prefHeight="15.0" prefWidth="102.0" text="Receipt Details" />
+      <Text fx:id="txtProInfo" layoutX="160.0" layoutY="661.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="478.7294921875" />
+      <Label layoutX="49.0" layoutY="649.0" prefHeight="15.0" prefWidth="102.0" text="Product Detail:" />
+   </children>
+</AnchorPane>

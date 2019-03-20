@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <top>
+      <AnchorPane prefHeight="64.0" prefWidth="703.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnLogin" layoutX="401.0" layoutY="38.0" mnemonicParsing="false" onAction="#loginClick" text="Login" />
+            <Button fx:id="btnRegister" layoutX="527.0" layoutY="38.0" mnemonicParsing="false" onAction="#resClick" text="Register" />
+            <Label fx:id="lbTop" alignment="TOP_CENTER" layoutX="363.0" layoutY="2.0" prefHeight="24.0" prefWidth="237.0" text="" />
+            <!-- -->
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </AnchorPane>
+   </top>
+   <right>
+      <AnchorPane prefHeight="336.0" prefWidth="136.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnRefresh" alignment="TOP_LEFT" layoutY="2.0" mnemonicParsing="false" onAction="#refreshClick" text="Refresh" />
+         </children>
+      </AnchorPane>
+   </right>
+
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="165.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnTesting" layoutX="10.0" layoutY="2.0" mnemonicParsing="false" onAction="#testOnClick" text="Order Now" visible="false" />
+            <Button fx:id="btnLeftProduct" layoutX="10.0" layoutY="40.0" mnemonicParsing="false" onAction="#leftProductOnClick" text="Product" visible="false" />
+            <Button fx:id="btnLeftReport" layoutX="10.0" layoutY="81.0" mnemonicParsing="false" onAction="#leftReportOnClick" text="Report" visible="false" />
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

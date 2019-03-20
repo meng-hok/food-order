@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!---->
+
+<AnchorPane fx:id="orderAnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.OrderController">
+   <children>
+      <!--<Label layoutX="204.0" layoutY="14.0" prefHeight="15.0" prefWidth="147.0" text="Welcome" />-->
+      <Button fx:id="btnPay" layoutX="366.0" layoutY="2.0" mnemonicParsing="false" onAction="#payOnClick" prefHeight="25.0" prefWidth="158.0" text="Pay" />
+      <Label alignment="CENTER" layoutX="39.0" layoutY="3.0" prefHeight="25.0" prefWidth="302.0" text="Products List" />
+      <!--<Button fx:id="btnReset" layoutX="538.0" layoutY="2.0" mnemonicParsing="false" onAction="#resetOnClick" text="Reset" />-->
+   </children>
+</AnchorPane>
